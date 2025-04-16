@@ -1,6 +1,6 @@
 # FAIR Genomes metadata schema
 
-The FAIR Genomes semantic metadata schema to power reuse of NGS data in research and healthcare. Version 1.3-SNAPSHOT, 2022-02-28. This model consists of __12 modules__ that contain __125 metadata elements__ and __290171 lookups__ in total (excluding null flavors).
+The FAIR Genomes semantic metadata schema to power reuse of NGS data in research and healthcare. Version 1.3-SNAPSHOT, 2022-02-28. This model consists of __14 modules__ that contain __131 metadata elements__ and __290197 lookups__ in total (excluding null flavors).
 
 ## Module overview
 
@@ -17,7 +17,9 @@ The FAIR Genomes semantic metadata schema to power reuse of NGS data in research
 | [Analysis](#module-analysis) | An analysis applies analytical (often computational) methods to existing data of a specific type to produce some desired output. | [EDAM:operation_2945](http://edamontology.org/operation_2945) | 11 |
 | [HMD Submission](#module-hmd-submission) | A class specific for the 1+MG GDI project containing items for metadata submission. | [FG:0000750](https://w3id.org/fair-genomes/resource/FG_0000750) | 8 |
 | [Treatment](#module-treatment) | An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process. | [NCIT:C49236](http://purl.obolibrary.org/obo/NCIT_C49236) | 3 |
-| [Biomarker](#module-biomarker) | TODO | [NCIT:C16342](http://purl.obolibrary.org/obo/NCIT_C16342) | 2 |
+| [Biomarker](#module-biomarker) | A characteristic that can be objectively measured and serves as an indicator for normal biologic processes, pathogenic processes, state of health or disease, the risk for disease development and/or prognosis, or responsiveness to a particular therapeutic intervention. | [NCIT:C16342](http://purl.obolibrary.org/obo/NCIT_C16342) | 6 |
+| [Variant](#module-variant) | A sequence_variant is a non exact copy of a sequence_feature or genome exhibiting one or more sequence_alteration. | [SO:0001060](http://www.sequenceontology.org/browser/current_release/term/SO:0001060) | 1 |
+| [Sequence](#module-sequence) | Any extent of continuous biological sequence. | [SO:0000110](http://www.sequenceontology.org/browser/current_release/term/SO:0000110) | 1 |
 
 ## Module: Study
 A detailed examination, analysis, or critical inspection of one or multiple subjects designed to discover facts. Ontology: [NCIT:C63536](http://purl.obolibrary.org/obo/NCIT_C63536).
@@ -209,12 +211,30 @@ An action or administration of therapeutic agents to produce an effect that is i
 | Response to Treatment | The patients' response to the applied treatment regimen. | [SNOMEDCT:182985004](http://purl.bioontology.org/ontology/SNOMEDCT/182985004) | [TreatmentResponse](../../lookups/TreatmentResponse.txt) lookup (5 choices [of type](http://purl.bioontology.org/ontology/SNOMEDCT/182985004)) |
 
 ## Module: Biomarker
-TODO Ontology: [NCIT:C16342](http://purl.obolibrary.org/obo/NCIT_C16342).
+A characteristic that can be objectively measured and serves as an indicator for normal biologic processes, pathogenic processes, state of health or disease, the risk for disease development and/or prognosis, or responsiveness to a particular therapeutic intervention. Ontology: [NCIT:C16342](http://purl.obolibrary.org/obo/NCIT_C16342).
 
 | Element | Description | Ontology | Values |
 |---|---|---|---|
 | Type | What type is the biomarker classified as. | [NCIT:C164707](http://purl.obolibrary.org/obo/NCIT_C164707) | [BiomarkerType](../../lookups/BiomarkerType.txt) lookup (5 choices [of type](http://purl.obolibrary.org/obo/NCIT_C164707)) |
 | Subtype_Molecular | Subtype of the molecular biomarker. | [FG:0000766](https://w3id.org/fair-genomes/resource/FG_0000766) | [BiomarkerMolecular](../../lookups/BiomarkerMolecular.txt) lookup (7 choices [of type](https://w3id.org/fair-genomes/resource/FG_0000766)) |
+| Subtype_Imaging | Subtype of the imaging biomarker. | [FG:0000767](https://w3id.org/fair-genomes/resource/FG_0000767) | [BiomarkerImaging](../../lookups/BiomarkerImaging.txt) lookup (8 choices [of type](https://w3id.org/fair-genomes/resource/FG_0000767)) |
+| Subtype_Anthropometric | Subtype of the anthropometric biomarker. | [FG:0000768](https://w3id.org/fair-genomes/resource/FG_0000768) | [BiomarkerAnthropometric](../../lookups/BiomarkerAnthropometric.txt) lookup (2 choices [of type](https://w3id.org/fair-genomes/resource/FG_0000768)) |
+| Subtype_Cellular | Subtype of the cellular biomarker. | [FG:0000769](https://w3id.org/fair-genomes/resource/FG_0000769) | [BiomarkerCellular](../../lookups/BiomarkerCellular.txt) lookup (2 choices [of type](https://w3id.org/fair-genomes/resource/FG_0000769)) |
+| Subtype_Physiological | Subtype of the physiological biomarker. | [FG:0000770](https://w3id.org/fair-genomes/resource/FG_0000770) | [BiomarkerPhysiological](../../lookups/BiomarkerPhysiological.txt) lookup (5 choices [of type](https://w3id.org/fair-genomes/resource/FG_0000770)) |
+
+## Module: Variant
+A sequence_variant is a non exact copy of a sequence_feature or genome exhibiting one or more sequence_alteration. Ontology: [SO:0001060](http://www.sequenceontology.org/browser/current_release/term/SO:0001060).
+
+| Element | Description | Ontology | Values |
+|---|---|---|---|
+| Variant_Type | The category or type of variation or abnormality present in an amino acid or nucleic acid sequence. | [FG:0000795](https://w3id.org/fair-genomes/resource/FG_0000795) | [VariantType](../../lookups/VariantType.txt) lookup (5 choices [of type](https://w3id.org/fair-genomes/resource/FG_0000795)) |
+
+## Module: Sequence
+Any extent of continuous biological sequence. Ontology: [SO:0000110](http://www.sequenceontology.org/browser/current_release/term/SO:0000110).
+
+| Element | Description | Ontology | Values |
+|---|---|---|---|
+| Target | Identification of the sequenced target. | [FG:0000799](https://w3id.org/fair-genomes/resource/FG_0000799) | [SequenceTarget](../../lookups/SequenceTarget.txt) lookup (4 choices [of type](https://w3id.org/fair-genomes/resource/FG_0000799)) |
 
 ## Null flavors
 Each lookup is supplemented with so-called 'null flavors' from HL7. These can be used to indicate precisely why a particular value could not be entered into the system, providing substantially more insight than simply leaving a field empty.

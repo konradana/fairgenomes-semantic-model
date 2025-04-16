@@ -1,0 +1,9 @@
+value	description	codesystem	code	iri
+X-Rays	X-Rays	FG	0000778	https://w3id.org/fair-genomes/resource/FG_0000778
+Ultrasound	Ultrasound	FG	0000779	https://w3id.org/fair-genomes/resource/FG_0000779
+CT Scan	CT Scan	FG	0000780	https://w3id.org/fair-genomes/resource/FG_0000780
+PET/SPECT	PET/SPECT	FG	0000781	https://w3id.org/fair-genomes/resource/FG_0000781
+Spectrometry	Spectrometry	FG	0000782	https://w3id.org/fair-genomes/resource/FG_0000782
+MRI	MRI	FG	0000783	https://w3id.org/fair-genomes/resource/FG_0000783
+Scintigraphy (Gamma)	Scintigraphy (Gamma)	FG	0000784	https://w3id.org/fair-genomes/resource/FG_0000784
+Mammography	Mammography	FG	0000785	https://w3id.org/fair-genomes/resource/FG_0000785

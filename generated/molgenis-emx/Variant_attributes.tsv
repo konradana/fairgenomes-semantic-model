@@ -1,0 +1,2 @@
+name	label	description	entity	dataType	idAttribute	labelAttribute	visible	nillable	refEntity
+Variant_type	Variant_Type	The category or type of variation or abnormality present in an amino acid or nucleic acid sequence. (FG:0000795)	Variant	mref	FALSE	FALSE	TRUE	TRUE	fair-genomes_Variant_Variant_type

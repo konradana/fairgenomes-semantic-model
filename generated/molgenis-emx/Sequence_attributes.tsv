@@ -1,0 +1,2 @@
+name	label	description	entity	dataType	idAttribute	labelAttribute	visible	nillable	refEntity
+Target	Target	Identification of the sequenced target. (FG:0000799)	Sequence	xref	FALSE	FALSE	TRUE	TRUE	fair-genomes_Sequence_Target

@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	Sequence_Target	Value (English)	String	TRUE	FALSE
+description	Sequence_Target	Description (English)	Text	FALSE	TRUE
+codesystem	Sequence_Target	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	Sequence_Target	The code within the code system	String	FALSE	TRUE
+iri	Sequence_Target	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

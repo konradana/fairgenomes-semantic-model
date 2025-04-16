@@ -6,7 +6,7 @@
 \textbf{FAIR Genomes metadata schema}
 \newline
 
-The FAIR Genomes semantic metadata schema to power reuse of NGS data in research and healthcare. Version 1.3-SNAPSHOT, 2022-02-28. This model consists of 12 modules that contain 125 metadata elements and 290171 lookups in total (excluding null flavors).
+The FAIR Genomes semantic metadata schema to power reuse of NGS data in research and healthcare. Version 1.3-SNAPSHOT, 2022-02-28. This model consists of 14 modules that contain 131 metadata elements and 290197 lookups in total (excluding null flavors).
 
 \begin{table}[htb]
 \begin{tabular}{lll}
@@ -23,7 +23,9 @@ Sequencing & EDAM:topic\_3168 & 12 \\
 Analysis & EDAM:operation\_2945 & 11 \\
 HMD Submission & FG:0000750 & 8 \\
 Treatment & NCIT:C49236 & 3 \\
-Biomarker & NCIT:C16342 & 2 \\
+Biomarker & NCIT:C16342 & 6 \\
+Variant & SO:0001060 & 1 \\
+Sequence & SO:0000110 & 1 \\
 \hline
 \end{tabular}
 \caption[Module overview]{\label{table:table1} FAIR Genomes metadata schema v1.3-SNAPSHOT overview of all modules.}
@@ -257,9 +259,33 @@ Name & Ontology & Values \\
 \hline
 Type & NCIT:C164707 & BiomarkerType lookup (5 choices) \\
 Subtype_Molecular & FG:0000766 & BiomarkerMolecular lookup (7 choices) \\
+Subtype_Imaging & FG:0000767 & BiomarkerImaging lookup (8 choices) \\
+Subtype_Anthropometric & FG:0000768 & BiomarkerAnthropometric lookup (2 choices) \\
+Subtype_Cellular & FG:0000769 & BiomarkerCellular lookup (2 choices) \\
+Subtype_Physiological & FG:0000770 & BiomarkerPhysiological lookup (5 choices) \\
 \hline
 \end{tabular}
-\caption[Module: Biomarker]{\label{table:table13} Module: Biomarker. TODO Ontology: NCIT:C16342. }
+\caption[Module: Biomarker]{\label{table:table13} Module: Biomarker. A characteristic that can be objectively measured and serves as an indicator for normal biologic processes, pathogenic processes, state of health or disease, the risk for disease development and/or prognosis, or responsiveness to a particular therapeutic intervention. Ontology: NCIT:C16342. }
+\end{table}
+
+\begin{table}[htb]
+\begin{tabular}{lll}
+Name & Ontology & Values \\
+\hline
+Variant_Type & FG:0000795 & VariantType lookup (5 choices) \\
+\hline
+\end{tabular}
+\caption[Module: Variant]{\label{table:table14} Module: Variant. A sequence_variant is a non exact copy of a sequence_feature or genome exhibiting one or more sequence_alteration. Ontology: SO:0001060. }
+\end{table}
+
+\begin{table}[htb]
+\begin{tabular}{lll}
+Name & Ontology & Values \\
+\hline
+Target & FG:0000799 & SequenceTarget lookup (4 choices) \\
+\hline
+\end{tabular}
+\caption[Module: Sequence]{\label{table:table15} Module: Sequence. Any extent of continuous biological sequence. Ontology: SO:0000110. }
 \end{table}
 
 \begin{table}[htb]
@@ -284,7 +310,7 @@ Sufficient quantity & HL7:QS \\
 Trace & HL7:TRC \\
 \hline
 \end{tabular}
-\caption[NullFlavors]{\label{table:table14} Overview of null flavors. Each lookup is supplemented with so-called 'null flavors' from HL7. These can be used to indicate precisely why a particular value could not be entered into the system, providing substantially more insight than simply leaving a field empty. }
+\caption[NullFlavors]{\label{table:table16} Overview of null flavors. Each lookup is supplemented with so-called 'null flavors' from HL7. These can be used to indicate precisely why a particular value could not be entered into the system, providing substantially more insight than simply leaving a field empty. }
 \end{table}
 
 \end{document}

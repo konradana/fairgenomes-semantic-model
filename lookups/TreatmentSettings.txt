@@ -1,4 +1,4 @@
 value	description	codesystem	code	iri
-Adjuvant	TODO	NCIT	C15675	http://purl.obolibrary.org/obo/NCIT_C15675
-Advanced/Metastatic	TODO	FG	0000760	https://w3id.org/fair-genomes/resource/FG_0000760
-Neoadjuvant	TODO	NCIT	C15665	http://purl.obolibrary.org/obo/NCIT_C15665
+Adjuvant	Any therapy that is administered to augment or stimulate other treatment modalities or to minimize or prevent disease recurrence subsequent to the main treatment plan.	NCIT	C15675	http://purl.obolibrary.org/obo/NCIT_C15675
+Advanced/Metastatic	Advanced/Metastatic	FG	0000760	https://w3id.org/fair-genomes/resource/FG_0000760
+Neoadjuvant	Therapy administered prior to the primary treatment for the purpose of making the primary treatment more effective.	NCIT	C15665	http://purl.obolibrary.org/obo/NCIT_C15665

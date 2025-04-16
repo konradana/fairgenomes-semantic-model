@@ -10,17 +10,17 @@
 
 fg:Treatment_Setting_Adjuvant a obo:NCIT_C124308;
   rdfs:label "Adjuvant";
-  dc:description "TODO";
+  dc:description "Any therapy that is administered to augment or stimulate other treatment modalities or to minimize or prevent disease recurrence subsequent to the main treatment plan.";
   rdfs:isDefinedBy obo:NCIT_C15675 .
 
 <https://w3id.org/fair-genomes/ontology/Treatment_Setting_Advanced/Metastatic> a obo:NCIT_C124308;
   rdfs:label "Advanced/Metastatic";
-  dc:description "TODO";
+  dc:description "Advanced/Metastatic";
   rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000760> .
 
 fg:Treatment_Setting_Neoadjuvant a obo:NCIT_C124308;
   rdfs:label "Neoadjuvant";
-  dc:description "TODO";
+  dc:description "Therapy administered prior to the primary treatment for the purpose of making the primary treatment more effective.";
   rdfs:isDefinedBy obo:NCIT_C15665 .
 
 <https://w3id.org/fair-genomes/ontology/Treatment_Setting_NoInformation_(NI,_nullflavor)>

@@ -1,0 +1,3 @@
+value	description	codesystem	code	iri
+BMI	BMI	FG	0000786	https://w3id.org/fair-genomes/resource/FG_0000786
+Body perimeters (circumference)	Body perimeters (circumference)	FG	0000787	https://w3id.org/fair-genomes/resource/FG_0000787

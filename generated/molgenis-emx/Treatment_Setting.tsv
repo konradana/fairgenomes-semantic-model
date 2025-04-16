@@ -1,7 +1,7 @@
 value	description	codesystem	code	iri
-Adjuvant	TODO	NCIT	C15675	http://purl.obolibrary.org/obo/NCIT_C15675
-Advanced/Metastatic	TODO	FG	0000760	https://w3id.org/fair-genomes/resource/FG_0000760
-Neoadjuvant	TODO	NCIT	C15665	http://purl.obolibrary.org/obo/NCIT_C15665
+Adjuvant	Any therapy that is administered to augment or stimulate other treatment modalities or to minimize or prevent disease recurrence subsequent to the main treatment plan.	NCIT	C15675	http://purl.obolibrary.org/obo/NCIT_C15675
+Advanced/Metastatic	Advanced/Metastatic	FG	0000760	https://w3id.org/fair-genomes/resource/FG_0000760
+Neoadjuvant	Therapy administered prior to the primary treatment for the purpose of making the primary treatment more effective.	NCIT	C15665	http://purl.obolibrary.org/obo/NCIT_C15665
 NoInformation (NI, nullflavor)	The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional value is provided. This is the most general exceptional value. It is also the default exceptional value.	HL7	NI	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#NI
 Invalid (INV, nullflavor)	The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain of a variable.	HL7	INV	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#INV
 Derived (DER, nullflavor)	An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension will be used to convey the derivation expression .	HL7	DER	http://terminology.hl7.org/CodeSystem/v3-NullFlavor#DER

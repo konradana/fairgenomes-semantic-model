@@ -1,0 +1,6 @@
+value	description	codesystem	code	iri
+Blood Pressure	Blood Pressure	FG	0000790	https://w3id.org/fair-genomes/resource/FG_0000790
+Ankle-brachial Index	Ankle-brachial Index	FG	0000791	https://w3id.org/fair-genomes/resource/FG_0000791
+ECG	ECG	FG	0000792	https://w3id.org/fair-genomes/resource/FG_0000792
+EEG	EEG	FG	0000793	https://w3id.org/fair-genomes/resource/FG_0000793
+Electromyography	Electromyography	FG	0000794	https://w3id.org/fair-genomes/resource/FG_0000794

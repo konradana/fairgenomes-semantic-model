@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://fairgenomes.org/fairgenomes-semantic-model/misc/semanticscience.org/resource.xsl" ?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:ns0="http://purl.org/dc/elements/1.1/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+  <rdf:Description rdf:about="http://www.sequenceontology.org/browser/current_release/term/SO:0001060">
+    <rdfs:label xml:lang="en">A sequence_variant is a non exact copy of a sequence_feature or genome exhibiting one or more sequence_alteration.</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://w3id.org/fair-genomes/resource/FG_0000795">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">Variant_Type</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/fair-genomes/ontology/fair-genomes.ttl"/>
+    <rdfs:domain rdf:resource="http://www.sequenceontology.org/browser/current_release/term/SO:0001060"/>
+    <dc:description xml:lang="en">The category or type of variation or abnormality present in an amino acid or nucleic acid sequence.</dc:description>
+    <dc:identifier>FG:0000795</dc:identifier>
+    <ns0:identifier>FG_0000795</ns0:identifier>
+  </rdf:Description>
+
+</rdf:RDF>
