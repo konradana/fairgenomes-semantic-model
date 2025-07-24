@@ -1,0 +1,9 @@
+value	description	codesystem	code	iri
+X-Rays	A radiographic procedure using the emission of x-rays to form an image of the structure penetrated by the radiation.	NCIT	C38101	http://purl.obolibrary.org/obo/NCIT_C38101
+Ultrasound	The use of high-frequency sound waves to generate images of the body.	NCIT	C17230	http://purl.obolibrary.org/obo/NCIT_C17230
+CT Scan	A method of examining structures within the body by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis.	NCIT	C17204	http://purl.obolibrary.org/obo/NCIT_C17204
+PET/SPECT	A technique for measuring the gamma radiation produced by collisions of electrons and positrons (anti-electrons) within living tissue.	NCIT	C17007	http://purl.obolibrary.org/obo/NCIT_C17007
+Spectrometry	A class of analytical techniques used to measure certain physical properties such as energy, mass and wavelength via the dispersion of radiant energy or particles into a spectrum.	NCIT	C62326	http://purl.obolibrary.org/obo/NCIT_C62326
+MRI	Imaging that uses radiofrequency waves and a strong magnetic field rather than x-rays to provide detailed pictures of internal organs and tissues. The technique is valuable for the diagnosis of many pathologic conditions, including cancer, heart and vascular disease, stroke, and joint and musculoskeletal disorders.	NCIT	C16809	http://purl.obolibrary.org/obo/NCIT_C16809
+Scintigraphy (Gamma)	An imaging technique that uses a small dose of a radioactive chemical (isotope) called a tracer that can detect sites of cancer growth, trauma, infection or degenerative disorders.	NCIT	C62667	http://purl.obolibrary.org/obo/NCIT_C62667
+Mammography	A type of radiography used specifically to examine breast tissue.	NCIT	C16818	http://purl.obolibrary.org/obo/NCIT_C16818

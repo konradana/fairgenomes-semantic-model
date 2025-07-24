@@ -1,0 +1,6 @@
+value	description	codesystem	code	iri
+Molecular	These include DNA, RNA, proteins, and metabolites. Studies within genetic/genomics use genetic variants to explore causal relationships between lifestyle factors and disease outcomes.	FG	0000764	https://w3id.org/fair-genomes/resource/FG_0000764
+Imaging	These use medical imaging techniqueslike X-rays, MRI, PET, or CT scansto visualize and measure structural, functional, or molecular changesin organs or tissues.	FG	0000762	https://w3id.org/fair-genomes/resource/FG_0000762
+Anthropometric	These involve physical measurements of the body,such as BMI or waist circumference, often used as covariatesin multivariate models.	FG	0000765	https://w3id.org/fair-genomes/resource/FG_0000765
+Cellular	These involve the analysis of cells or tissue samplesto provide information about cellular processes or disease states, using techniqueslike staining or immunohistochemistry. 	FG	0000769	https://w3id.org/fair-genomes/resource/FG_0000769
+Physiological	These reflect functional changesin the body,such as blood pressure or heart rate, and can also include patterns of movement derived from accelerometry.	FG	0000770	https://w3id.org/fair-genomes/resource/FG_0000770

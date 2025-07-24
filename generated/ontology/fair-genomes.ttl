@@ -36,14 +36,19 @@
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genes.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-medicalhistory.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-institutes.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-varianttype.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genderatbirth.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-sequencingplatform.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-sequencinginstrumentmodels.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-representedby.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-datausepermissions.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-dataformats.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkerimaging.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genomeaccessions.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkermolecular.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-treatmentresponse.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-dcmitypes.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkercellular.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-ancestry.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-inclusionstatus.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-pathologicalstate.ttl>,
@@ -51,14 +56,18 @@
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-phenotypes.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biospecimentypes.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-institutesror.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkeranthropometric.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genotypicsex.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-genderidentity.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-treatmentsettings.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-diseases.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-anatomicalsources.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-sequencingmethods.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-storageconditions.ttl>,
     <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-ngskits.ttl>,
-    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-analysesperformed.ttl> .
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkertype.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-analysesperformed.ttl>,
+    <https://fairgenomes.github.io/fairgenomes-semantic-model/generated/ontology/fair-genomes-biomarkerphysiological.ttl> .
 
 fg:Study a owl:Class;
   rdfs:isDefinedBy obo:NCIT_C63536;
@@ -882,3 +891,87 @@ fg:HMD_Submission_Research_Consortia a owl:DatatypeProperty;
   rdfs:domain fg:HMD_Submission;
   rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000758>;
   dc:description "Identifies Research Consortia Involved." .
+
+fg:Treatment a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C49236;
+  rdfs:label "Treatment";
+  dc:description "An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process." .
+
+fg:Treatment_Dose_Units a owl:DatatypeProperty;
+  rdfs:label "Dose Units";
+  rdfs:domain fg:Treatment;
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000759>;
+  dc:description "Indicates the total dose given in units (e.g. of Gray (Gy) when radiation, Millimeters/24hours for medication)" .
+
+fg:Treatment_Setting a owl:ObjectProperty;
+  rdfs:label "Setting";
+  rdfs:domain fg:Treatment;
+  rdfs:isDefinedBy obo:NCIT_C124308;
+  dc:description "Indicate the treatment setting, which describes the treatment's purpose in relation to the primary treatment.";
+  rdfs:range obo:NCIT_C124308 .
+
+fg:Treatment_Response_to_Treatment a owl:ObjectProperty;
+  rdfs:label "Response to Treatment";
+  rdfs:domain fg:Treatment;
+  rdfs:isDefinedBy <http://purl.bioontology.org/ontology/SNOMEDCT/182985004>;
+  dc:description "The patients' response to the applied treatment regimen.";
+  rdfs:range <http://purl.bioontology.org/ontology/SNOMEDCT/182985004> .
+
+fg:Biomarker a owl:Class;
+  rdfs:isDefinedBy obo:NCIT_C16342;
+  rdfs:label "Biomarker";
+  dc:description "A characteristic that can be objectively measured and serves as an indicator for normal biologic processes, pathogenic processes, state of health or disease, the risk for disease development and/or prognosis, or responsiveness to a particular therapeutic intervention." .
+
+fg:Biomarker_Type a owl:ObjectProperty;
+  rdfs:label "Type";
+  rdfs:domain fg:Biomarker;
+  rdfs:isDefinedBy obo:NCIT_C164707;
+  dc:description "What type is the biomarker classified as.";
+  rdfs:range obo:NCIT_C164707 .
+
+fg:Biomarker_Subtype_Molecular a owl:ObjectProperty;
+  rdfs:label "Subtype_Molecular";
+  rdfs:domain fg:Biomarker;
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000766>;
+  dc:description "Subtype of the molecular biomarker.";
+  rdfs:range <https://w3id.org/fair-genomes/resource/FG_0000766> .
+
+fg:Biomarker_Subtype_Imaging a owl:ObjectProperty;
+  rdfs:label "Subtype_Imaging";
+  rdfs:domain fg:Biomarker;
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000767>;
+  dc:description "Subtype of the imaging biomarker.";
+  rdfs:range <https://w3id.org/fair-genomes/resource/FG_0000767> .
+
+fg:Biomarker_Subtype_Anthropometric a owl:ObjectProperty;
+  rdfs:label "Subtype_Anthropometric";
+  rdfs:domain fg:Biomarker;
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000768>;
+  dc:description "Subtype of the anthropometric biomarker.";
+  rdfs:range <https://w3id.org/fair-genomes/resource/FG_0000768> .
+
+fg:Biomarker_Subtype_Cellular a owl:ObjectProperty;
+  rdfs:label "Subtype_Cellular";
+  rdfs:domain fg:Biomarker;
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000769>;
+  dc:description "Subtype of the cellular biomarker.";
+  rdfs:range <https://w3id.org/fair-genomes/resource/FG_0000769> .
+
+fg:Biomarker_Subtype_Physiological a owl:ObjectProperty;
+  rdfs:label "Subtype_Physiological";
+  rdfs:domain fg:Biomarker;
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000770>;
+  dc:description "Subtype of the physiological biomarker.";
+  rdfs:range <https://w3id.org/fair-genomes/resource/FG_0000770> .
+
+fg:Variant a owl:Class;
+  rdfs:isDefinedBy <http://www.sequenceontology.org/browser/current_release/term/SO:0001060>;
+  rdfs:label "Variant";
+  dc:description "A sequence_variant is a non exact copy of a sequence_feature or genome exhibiting one or more sequence_alteration." .
+
+fg:Variant_Variant_Type a owl:ObjectProperty;
+  rdfs:label "Variant_Type";
+  rdfs:domain fg:Variant;
+  rdfs:isDefinedBy <https://w3id.org/fair-genomes/resource/FG_0000795>;
+  dc:description "The category or type of variation or abnormality present in an amino acid or nucleic acid sequence.";
+  rdfs:range <https://w3id.org/fair-genomes/resource/FG_0000795> .

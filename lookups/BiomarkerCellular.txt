@@ -1,0 +1,3 @@
+value	description	codesystem	code	iri
+Histology (tissue abnormalities)	The study of the structure of the cells and their arrangement to constitute tissues and, finally, the association among these to form organs. In pathology, the microscopic process of identifying normal and abnormal morphologic characteristics in tissues, by employing various cytochemical and immunocytochemical stains.	NCIT	C16681	http://purl.obolibrary.org/obo/NCIT_C16681
+Cytology (cell types)	The light microscopic study of normal and abnormal cells in fine needle aspirates (FNAs), body cavity fluids, and smears.	NCIT	C16491	http://purl.obolibrary.org/obo/NCIT_C16491

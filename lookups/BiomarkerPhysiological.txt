@@ -1,0 +1,6 @@
+value	description	codesystem	code	iri
+Blood Pressure	The pressure of the circulating blood against the walls of the blood vessels.	NCIT	C54706	http://purl.obolibrary.org/obo/NCIT_C54706
+Ankle-brachial Index	The ratio of ankle systolic pressure to brachial systolic pressure, used to assess arterial insufficiency in the lower extremities.	NCIT	C87304	http://purl.obolibrary.org/obo/NCIT_C87304
+ECG	A procedure that displays the electrical activity of the heart.	NCIT	C38053	http://purl.obolibrary.org/obo/NCIT_C38053
+EEG	The neurophysiologic exploration of the electrical activity of the brain by the application of electrodes to the scalp. The resulting traces are known as an electroencephalogram (EEG). This test is used to assess brain damage, epilepsy and other problems.	NCIT	C38054	http://purl.obolibrary.org/obo/NCIT_C38054
+Electromyography	An assessment of skeletal muscle function and nerve control, obtained by recording and studying the intrinsic electrical properties of the muscles.	NCIT	C38056	http://purl.obolibrary.org/obo/NCIT_C38056

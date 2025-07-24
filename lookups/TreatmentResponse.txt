@@ -1,0 +1,6 @@
+value	description	codesystem	code	iri
+Complete response	Complete therapeutic response.	SNOMEDCT	399056007	http://purl.bioontology.org/ontology/SNOMEDCT/399056007
+Disease progression	A process that manifests as the worsening of a disease over time.	NCIT	C17747	http://purl.obolibrary.org/obo/NCIT_C17747
+NED	No evidence of disease. Diagnostic tests fail to detect presence of disease.	NCIT	C40413	http://purl.obolibrary.org/obo/NCIT_C40413
+Partial response	Signifies a reduction in the extent or size of a disease, such as a tumor, in response to therapy, but the disease is not eliminated entirely.	FG	0000761	https://w3id.org/fair-genomes/resource/FG_0000761
+Stable disease	A disease that is neither decreasing nor increasing in extent or severity.	NCIT	C18213	http://purl.obolibrary.org/obo/NCIT_C18213

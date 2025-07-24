@@ -611,3 +611,82 @@ modules:
             description: Identifies Research Consortia Involved.
             ontology: FG:0000758 [https://w3id.org/fair-genomes/resource/FG_0000758]
             values: String
+    - name: Treatment
+      description: An action or administration of therapeutic agents to produce an effect that is intended to alter or stop a pathologic process.
+      ontology: NCIT:C49236 [http://purl.obolibrary.org/obo/NCIT_C49236]
+      elements:
+          - name: Dose Units
+            description: Indicates the total dose given in units (e.g. of Gray (Gy) when radiation, Millimeters/24hours for medication)
+            ontology: FG:0000759 [https://w3id.org/fair-genomes/resource/FG_0000759]
+            values: String #Temporary until proper lookup is created
+          - name: Setting
+            description: Indicate the treatment setting, which describes the treatment's purpose in relation to the primary treatment.
+            ontology: NCIT:C124308 [http://purl.obolibrary.org/obo/NCIT_C124308]
+            values: LookupOne [lookups/TreatmentSettings.txt], ofType [http://purl.obolibrary.org/obo/NCIT_C124308]
+          - name: Response to Treatment
+            description: The patients' response to the applied treatment regimen.
+            ontology: SNOMEDCT:182985004 [http://purl.bioontology.org/ontology/SNOMEDCT/182985004]
+            values: LookupOne [lookups/TreatmentResponse.txt], ofType [http://purl.bioontology.org/ontology/SNOMEDCT/182985004]
+    - name: Biomarker
+      description: A characteristic that can be objectively measured and serves as an indicator for normal biologic processes, pathogenic processes, state of health or disease, the risk for disease development and/or prognosis, or responsiveness to a particular therapeutic intervention.
+      ontology: NCIT:C16342 [http://purl.obolibrary.org/obo/NCIT_C16342]
+      elements:
+          - name: Type
+            description: What type is the biomarker classified as.
+            ontology: NCIT:C164707 [http://purl.obolibrary.org/obo/NCIT_C164707]
+            values: LookupOne [lookups/BiomarkerType.txt], ofType [http://purl.obolibrary.org/obo/NCIT_C164707]
+          - name: Subtype_Molecular
+            description: Subtype of the molecular biomarker.
+            ontology: FG:0000766 [https://w3id.org/fair-genomes/resource/FG_0000766]
+            values: LookupOne [lookups/BiomarkerMolecular.txt], ofType [https://w3id.org/fair-genomes/resource/FG_0000766]
+          - name: Subtype_Imaging
+            description: Subtype of the imaging biomarker.
+            ontology: FG:0000767 [https://w3id.org/fair-genomes/resource/FG_0000767]
+            values: LookupOne [lookups/BiomarkerImaging.txt], ofType [https://w3id.org/fair-genomes/resource/FG_0000767]
+          - name: Subtype_Anthropometric
+            description: Subtype of the anthropometric biomarker.
+            ontology: FG:0000768 [https://w3id.org/fair-genomes/resource/FG_0000768]
+            values: LookupOne [lookups/BiomarkerAnthropometric.txt], ofType [https://w3id.org/fair-genomes/resource/FG_0000768]
+          - name: Subtype_Cellular
+            description: Subtype of the cellular biomarker.
+            ontology: FG:0000769 [https://w3id.org/fair-genomes/resource/FG_0000769]
+            values: LookupOne [lookups/BiomarkerCellular.txt], ofType [https://w3id.org/fair-genomes/resource/FG_0000769]                
+          - name: Subtype_Physiological
+            description: Subtype of the physiological biomarker.
+            ontology: FG:0000770 [https://w3id.org/fair-genomes/resource/FG_0000770]
+            values: LookupOne [lookups/BiomarkerPhysiological.txt], ofType [https://w3id.org/fair-genomes/resource/FG_0000770]    
+    - name: Variant
+      description: A sequence_variant is a non exact copy of a sequence_feature or genome exhibiting one or more sequence_alteration.
+      ontology: SO:0001060 [http://www.sequenceontology.org/browser/current_release/term/SO:0001060]
+      elements:
+          - name: Variant_Type
+            description: The category or type of variation or abnormality present in an amino acid or nucleic acid sequence.
+            ontology: FG:0000795 [https://w3id.org/fair-genomes/resource/FG_0000795]
+            values: LookupMany [lookups/VariantType.txt], ofType [https://w3id.org/fair-genomes/resource/FG_0000795]
+    # - name: Sequence
+    #   description: Any extent of continuous biological sequence.
+    #   ontology: SO:0000110 [http://www.sequenceontology.org/browser/current_release/term/SO:0000110]
+    #   elements:
+    #       - name: Target
+    #         description: Identification of the sequenced target.
+    #         ontology: FG:0000799 [https://w3id.org/fair-genomes/resource/FG_0000799]
+    #         values: LookupOne [lookups/SequenceTarget.txt], ofType [https://w3id.org/fair-genomes/resource/FG_0000799]
+ 
+    # - name: Sample
+    #   description: A sample is a limited quantity of something (e.g. an individual or set of individuals from a population, or a portion of a substance) to be used for testing, analysis, inspection, investigation, demonstration, or trial use.
+    #   ontology: SIO:001050 [https://semanticscience.org/resource/SIO_001050]
+    #   elements:
+    #       - name: Pathological state
+    #         description: The pathological condition of the sample.
+    #         ontology: FG:0000752 [https://w3id.org/fair-genomes/resource/FG_0000752]
+    #         values: Link to value list used
+
+    # - name: Place_Holder class
+    #   description: Description of the class
+    #   ontology: FG:0000759 [https://w3id.org/fair-genomes/resource/FG_0000759]
+    #   elements:
+    #       - name: First item
+    #         description: Description of value
+    #         ontology: FG:0000752 [https://w3id.org/fair-genomes/resource/FG_0000752]
+    #         values: Link to value list used
+         

@@ -1,0 +1,6 @@
+name	entity	label	dataType	idAttribute	nillable
+value	Variant_Variant_type	Value (English)	String	TRUE	FALSE
+description	Variant_Variant_type	Description (English)	Text	FALSE	TRUE
+codesystem	Variant_Variant_type	The code system (e.g. ontology) this term belongs to	String	FALSE	TRUE
+code	Variant_Variant_type	The code within the code system	String	FALSE	TRUE
+iri	Variant_Variant_type	The Internationalized Resource Identifier for this term	String	FALSE	TRUE

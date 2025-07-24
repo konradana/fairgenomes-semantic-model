@@ -38,6 +38,15 @@ mcmd import -p Analysis_DataFormatsStored_attributes.tsv --as attributes --in fa
 mcmd import -p Analysis_ReferenceGenomeUsed_attributes.tsv --as attributes --in fair-genomes
 mcmd import -p HmdSubmission_InstitutionClinical_attributes.tsv --as attributes --in fair-genomes
 mcmd import -p HmdSubmission_InstitutionDataCenter_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Treatment_Setting_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Treatment_ResponseToTreatment_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Biomarker_Type_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Biomarker_Subtype_molecular_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Biomarker_Subtype_imaging_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Biomarker_Subtype_anthropometric_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Biomarker_Subtype_cellular_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Biomarker_Subtype_physiological_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Variant_Variant_type_attributes.tsv --as attributes --in fair-genomes
 mcmd import -p Study_InclusionCriteria.tsv --as fair-genomes_Study_InclusionCriteria --in fair-genomes
 mcmd import -p Personal_GenderIdentity.tsv --as fair-genomes_Personal_GenderIdentity --in fair-genomes
 mcmd import -p Personal_GenderAtBirth.tsv --as fair-genomes_Personal_GenderAtBirth --in fair-genomes
@@ -77,6 +86,15 @@ mcmd import -p Analysis_DataFormatsStored.tsv --as fair-genomes_Analysis_DataFor
 mcmd import -p Analysis_ReferenceGenomeUsed.tsv --as fair-genomes_Analysis_ReferenceGenomeUsed --in fair-genomes
 mcmd import -p HmdSubmission_InstitutionClinical.tsv --as fair-genomes_HmdSubmission_InstitutionClinical --in fair-genomes
 mcmd import -p HmdSubmission_InstitutionDataCenter.tsv --as fair-genomes_HmdSubmission_InstitutionDataCenter --in fair-genomes
+mcmd import -p Treatment_Setting.tsv --as fair-genomes_Treatment_Setting --in fair-genomes
+mcmd import -p Treatment_ResponseToTreatment.tsv --as fair-genomes_Treatment_ResponseToTreatment --in fair-genomes
+mcmd import -p Biomarker_Type.tsv --as fair-genomes_Biomarker_Type --in fair-genomes
+mcmd import -p Biomarker_Subtype_molecular.tsv --as fair-genomes_Biomarker_Subtype_molecular --in fair-genomes
+mcmd import -p Biomarker_Subtype_imaging.tsv --as fair-genomes_Biomarker_Subtype_imaging --in fair-genomes
+mcmd import -p Biomarker_Subtype_anthropometric.tsv --as fair-genomes_Biomarker_Subtype_anthropometric --in fair-genomes
+mcmd import -p Biomarker_Subtype_cellular.tsv --as fair-genomes_Biomarker_Subtype_cellular --in fair-genomes
+mcmd import -p Biomarker_Subtype_physiological.tsv --as fair-genomes_Biomarker_Subtype_physiological --in fair-genomes
+mcmd import -p Variant_Variant_type.tsv --as fair-genomes_Variant_Variant_type --in fair-genomes
 mcmd import -p Study_attributes.tsv --as attributes --in fair-genomes
 mcmd import -p Personal_attributes.tsv --as attributes --in fair-genomes
 mcmd import -p LeafletAndConsentForm_attributes.tsv --as attributes --in fair-genomes
@@ -87,6 +105,9 @@ mcmd import -p SamplePreparation_attributes.tsv --as attributes --in fair-genome
 mcmd import -p Sequencing_attributes.tsv --as attributes --in fair-genomes
 mcmd import -p Analysis_attributes.tsv --as attributes --in fair-genomes
 mcmd import -p HmdSubmission_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Treatment_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Biomarker_attributes.tsv --as attributes --in fair-genomes
+mcmd import -p Variant_attributes.tsv --as attributes --in fair-genomes
 mcmd import -p ../../misc/molgenis/other/sys_StaticContent.tsv -a add_update_existing
 mcmd add logo -p ../../misc/molgenis/img/analysis.png
 mcmd add logo -p ../../misc/molgenis/img/lookups.png

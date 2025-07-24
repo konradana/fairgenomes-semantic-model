@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="https://fairgenomes.org/fairgenomes-semantic-model/misc/semanticscience.org/resource.xsl" ?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:ns0="http://purl.org/dc/elements/1.1/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16342">
+    <rdfs:label xml:lang="en">A characteristic that can be objectively measured and serves as an indicator for normal biologic processes, pathogenic processes, state of health or disease, the risk for disease development and/or prognosis, or responsiveness to a particular therapeutic intervention.</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="https://w3id.org/fair-genomes/resource/FG_0000767">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">Subtype_Imaging</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/fair-genomes/ontology/fair-genomes.ttl"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCIT_C16342"/>
+    <dc:description xml:lang="en">Subtype of the imaging biomarker.</dc:description>
+    <dc:identifier>FG:0000767</dc:identifier>
+    <ns0:identifier>FG_0000767</ns0:identifier>
+  </rdf:Description>
+
+</rdf:RDF>

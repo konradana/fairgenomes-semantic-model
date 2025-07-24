@@ -1,0 +1,3 @@
+value	description	codesystem	code	iri
+BMI	Subject's body mass index (in kg/m2), as reported.	NCIT	C168828	http://purl.obolibrary.org/obo/NCIT_C168828
+Body perimeters (circumference)	Measurements of body parts that have a measurable distance around them.	NCIT	C172255	http://purl.obolibrary.org/obo/NCIT_C172255
